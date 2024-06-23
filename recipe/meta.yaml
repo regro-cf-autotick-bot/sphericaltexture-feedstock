@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphericaltexture-{{ version }}.tar.gz
-  sha256: e2ca0311b8d9db163c82b46562c633807e6611b4bafcae32ece4a95b2504d87c
+  sha256: d8c34abffbc72b051d927d5ff52528760b22109e494e6620a71d839a9cf33309
 
 build:
   noarch: python
