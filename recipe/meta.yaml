@@ -23,7 +23,7 @@ requirements:
     - python >=3.9
     - scikit-image
     - numba
-    - pyshtools ==4.10.3
+    - pyshtools >=4.10.3
     - ducc0
     - scipy
     - appdirs
