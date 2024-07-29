@@ -31,10 +31,14 @@ requirements:
 test:
   imports:
     - sphericaltexture
-  commands:
-    - pip check
-  requires:
-    - pip
+    # for now check pyshtools that way - pip check currently does not work
+    # as pyshtools build seems to end up without .dist-info folder.
+    # ref: https://github.com/conda-forge/pyshtools-feedstock/issues/62
+    - pyshtools
+  # commands:
+  #   - python -m pip check
+  # requires:
+  #   - pip
 
 about:
   summary: Angular projections of 2/3D image objects and subsequent spherical harmonics analysis
