@@ -1,5 +1,5 @@
 {% set name = "SphericalTexture" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphericaltexture-{{ version }}.tar.gz
-  sha256: d8c34abffbc72b051d927d5ff52528760b22109e494e6620a71d839a9cf33309
+  sha256: 78e8adf44c3453e73c0e6a36f8e3145aaa553fc1a7a7d311e0a45b751892a73f
 
 build:
   noarch: python
