@@ -12,15 +12,15 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - poetry-core >=1.1.0
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - scikit-image
     - numba
     - pyshtools >=4.10.3
@@ -29,6 +29,8 @@ requirements:
     - appdirs
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sphericaltexture
     # for now check pyshtools that way - pip check currently does not work
